@@ -7,3 +7,4 @@ Rs = csv.reader(Fi)
 for i in Rs:
     pr = KafkaProducer(value_serializer=lambda m: json.dumps(m).encode("utf-8"))
     pr.send('sendit', i)
+print("absdjahsdsf")
